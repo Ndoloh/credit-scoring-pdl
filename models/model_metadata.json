@@ -1,0 +1,86 @@
+{
+  "model_type": "LightGBM binary classifier",
+  "trained_on_rows": 8578,
+  "test_auc": 0.8249,
+  "test_gini": 0.6499,
+  "test_ks": 0.5319,
+  "features_numeric": [
+    "age",
+    "monthly_income_kes",
+    "crb_score",
+    "num_active_loans_other_lenders",
+    "total_outstanding_debt_kes",
+    "num_defaults_last_24m",
+    "max_days_past_due_24m",
+    "crb_listed_negative",
+    "avg_monthly_inflow_kes",
+    "avg_monthly_outflow_kes",
+    "inflow_volatility_cv",
+    "avg_closing_balance_kes",
+    "salary_regularity_score",
+    "num_bounced_payments_6m",
+    "mobile_money_txn_count_monthly",
+    "num_distinct_income_sources",
+    "app_tenure_days",
+    "app_sessions_per_week",
+    "contacts_permission_granted",
+    "sms_permission_granted",
+    "num_support_tickets_90d",
+    "profile_completeness_pct",
+    "days_since_last_app_open",
+    "prior_completed_loans_with_us",
+    "prior_defaults_with_us",
+    "prior_avg_days_late_with_us",
+    "prior_repayment_rate_with_us",
+    "requested_amount_kes",
+    "debt_to_income_ratio",
+    "requested_to_income_ratio",
+    "net_cashflow_kes",
+    "outflow_to_inflow_ratio",
+    "is_digital_channel"
+  ],
+  "features_categorical": [
+    "acquisition_channel",
+    "region",
+    "employment_type",
+    "gender",
+    "device_type"
+  ],
+  "categorical_levels": {
+    "acquisition_channel": [
+      "digital",
+      "sales_assisted"
+    ],
+    "region": [
+      "Eldoret",
+      "Kakamega",
+      "Kiambu",
+      "Kisumu",
+      "Machakos",
+      "Meru",
+      "Mombasa",
+      "Nairobi",
+      "Nakuru",
+      "Nyeri",
+      "Uasin Gishu",
+      "West Pokot"
+    ],
+    "employment_type": [
+      "civil_servant",
+      "formal_employed",
+      "informal_gig",
+      "self_employed_business"
+    ],
+    "gender": [
+      "F",
+      "M"
+    ],
+    "device_type": [
+      "android_high",
+      "android_low_end",
+      "android_mid",
+      "ios",
+      "no_app_no_device"
+    ]
+  }
+}
