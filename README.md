@@ -48,3 +48,15 @@ This is synthetic data, generated with realistic feature correlations (CRB score
 - No target leakage: features exclude post-outcome fields (loan_status, days_late, repaid_pct)
 - Channel-structural missingness preserved: sales-assisted customers have no app data - filled with an explicit sentinel (-1 / "no_app_no_device") rather than imputed, letting the model learn "no app data" as its own signal
 - Reject inference not yet implemented: rejected applications have no observed outcome and are excluded from training; a natural next step is reject inference or a survival-style model for censored outcomes
+
+
+## Screenshots
+
+### Portfolio Overview
+![Portfolio Overview](images/portfolio_overview.png)
+
+### Scoring a New Applicant
+![Score Applicant](images/score_applicant.png)
+
+### Model Performance
+![Model Performance](images/model_performance.png)
